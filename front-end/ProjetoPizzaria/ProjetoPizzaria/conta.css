@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url('img/Group\ 48.png');
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+}
+
+.logo p{
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.retangulo{
+    width: 553px;
+    height: 580px;
+    background-color: rgb(239, 239, 239, 0.12);
+    align-items: center;
+    margin-left: 50px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.texto{
+    text-align: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 590px;
+}
+
+.texto h1{
+    color: white;
+    margin-top: 130px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Poppins;
+    margin-right: 150px; 
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    bottom: 110px;
+}
+
+.texto p{
+    text-align: center;
+    color: white;
+    display: inline-block;
+    position: relative;
+    bottom: 110px;
+    margin-right: 150px;
+    font-size: 20px;
+}
+
+.campos{
+    margin-left: 50px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.b1{
+    border-radius: 8px;
+    background: #FFF;
+    z-index: 5;
+    width: 295px;
+    height: 54px;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+.b1 button{
+    background-color: #FFF;
+    text-align: center;
+    align-items: center;
+    border: #F27706;
+    border-radius: 5px;
+    padding-left: 55px;
+    margin-top: 15px;
+}
+
+.b2 {
+    border-radius: 8px;
+    background: #FFF;
+    width: 295px;
+    height: 54px;
+}
+
+.b2 button{
+    background-color: #FFF;
+    text-align: center;
+    align-items: center;
+    border: #F27706;
+    border-radius: 5px;
+    padding-left: 50px;
+    margin-top: 15px;
+}
+
+.retangulo form{
+    margin-top: 7px;
+}
+
+.email{
+    position: relative;
+    bottom: 100px;
+}
+
+.email p{
+    margin-left: 30px;
+    color: white;
+}
+
+.senha{
+    position: relative;
+    bottom: 70px;
+}
+
+.senha p{
+    margin-left: 30px;
+    color: #FFF;
+}
+
+.retangulo input[type="email"]:focus{outline: 0}
+
+.retangulo input[type="email"]{
+    width: 450px;
+    height: 41px;
+    border-radius: 100px;
+    background-color: #fff;
+    border: 0;
+    padding-left: 10px;
+}
+
+.retangulo input[type="password"]:focus{outline: 0}
+
+.retangulo input[type="password"]{
+    width: 450px;
+    height: 41px;
+    border-radius: 100px;
+    background-color: #fff;
+    border: 0;
+    padding-left: 10px;
+}
+
+.forgout p{
+    margin-left: 280px;
+    font-size: 15px;
+    position: relative;
+    color: #FFF;
+    top: -60px;
+}
+
+.b1{
+    background-color: #fff;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    margin-left: 70px;
+    border-radius: 7px;
+    padding-bottom: 40px;
+}
+
+.b2{
+    background-color: #fff;
+    width: 150px;
+    height: 40px;
+    margin-right: 160px;
+    border-radius: 7px;
+    bottom: 40px;
+    float: right;
+    position: relative;
+}
+
+.b2 p{
+    text-align: center;
+    padding-top: 12px;
+}
+
+.create{
+    color: #FFF;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+@media (max-width: 400px){
+
+    .logo{
+        margin-left: 20px;
+    }
+
+    .retangulo{
+        height: 630px;
+        width: 360px;
+        margin-left: 10px;
+    } 
+
+    .texto h1{
+        padding-right: 160px;
+    }
+
+    .texto p{
+        padding-right: 180px;
+        font-size: 15px;
+    }
+
+    .email p{
+        padding-right: -10px;
+    }
+
+    .retangulo input[type="email"]{
+        width: 270px;
+        height: 30px;
+    }
+
+    .retangulo input[type="password"]{
+        width: 270px;
+        height: 30px;
+    }
+
+    .forgout p{
+        margin-left: 160px;
+        margin-bottom: 10px;
+        top: -60px;
+    }
+
+    .b1{
+        margin-left: 30px;
+    }
+
+    .b2{
+        margin-right: 10px;
+    }
+
+    .create{
+        margin-left: 30px;
+    }
+}
+

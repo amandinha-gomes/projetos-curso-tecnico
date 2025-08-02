@@ -1,0 +1,147 @@
+*{ /*ASTERISCO- QUE AS REGRAS VALEM PARA TODAS*/
+    padding: 0;
+    margin: 0;
+    font-family: 'MuseoModerno';
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{ /*UMA FORMA MAIS FACIL DE USAR AS VARIAVEIS */
+    --text-color: #000000;
+    --text-color2: #9c9c9a;
+    --bg-color:#CCCCCC;
+    --main-color:#427BED;
+    --second-color:#FFFFFF;
+    --other-color:#868686;
+    --big-font:5.5rem; /*TAMANHO FONTE DO TITULO*/
+    --p-font:1rem; /*TAMANHO PARAGRAFO*/
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+header{
+    position: fixed; /*FIXA O CABEÇALHO*/
+    z-index: 1000; /*SOBREPOEM PARA CONTINUAR EXPOSTA*/
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex; /*ELE CRIA COLUNAS ENQUNTO ESTIVER ESPAÇO (AJUDA A NÃO FICAR UM EM CIMA DO OUTRO)*/
+    align-items: center; /*NO CENTRO VERTICALMENTE*/
+    justify-content: space-between; /*ESPAÇAMENTO ENTRE AS LINHAS*/
+    padding: 27px /*ESPAÇAMENTO PARA CIMA E PARA BAIXO */ 9% /*ESQUERDA PARA DIREITA*/;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo i{ /**/
+    vertical-align: middle;
+    color: var(--main-color);
+    font-size: 35px;
+    margin-right: 5px; /*ESPAÇAMENTRO ENTRE O ICONE E FRONT-END*/
+}
+
+.navlist{ /*TOPICOS HTML,CSS,JS,MDN,WEC*/
+    display: flex;
+}
+
+.navlist a{ /*ANIMAÇÃO PARA OS TÓPICOS*/
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 600; /*EXPRESSURA DA FONT*/
+    margin: 0 35px;
+    transition: all ease .50s; /*TIPO DE ANIMAÇÃO E QUANTO DURA*/
+}
+
+.navlist a:hover{ /*COR DA FONTE COM ANIMAÇÃO*/
+    color: var(--main-color);
+}
+
+.h-main{/*ICONE LUA*/
+    display: flex;
+    align-items: center;
+    font-size: 30PX;
+}
+
+section{
+    padding: 0 12%;
+}
+
+.content{ 
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto; /*DEFINIR O TANTO DE COLUNAS*/
+    align-items: center;
+    gap: 1rem; /*UNIDADE DE MEDIDA QUE USA O PADRÃO DO NAVEGADOR; ESPAÇAMENTO ENTRE AS LINHAS E COLUNAS*/
+} 
+
+.content-text h1{
+    font-size: var(--big-font);
+    line-height: 1.3; /*TAMANHO DA LINHA OU ESPAÇAMENTO*/
+    font-weight: 800;
+}
+
+.content-text h4{
+    margin: 5px 0;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.content-text p{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 26px;
+    max-width: 500px;
+    margin-bottom: 4rem;
+}
+
+.content-img{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto)); /*AUTO-FIT = DETERMINAR O TAMANHO DE COLUNAS AUTOMATICO; 
+    MINMAZ = TAMANHO ENTRE DAS IMAGENS PADRÃO*/
+    gap: 30px;
+}
+
+.box{
+    background-color: var(--second-color);
+    padding: 25px 40px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px/*DIFUSÃO DA SOMBRA OU DESFOQUE*/ #427BED /*COR DA SOMBRA*/; /*PARA DAR SOMBRA NA IMAGEM*/
+    transition:  all ease .55s; ;
+}
+
+.box img{ /*DETERMINAR O TAMANHO*/
+    max-width: 100% ; /*MAXIMO DO TAMANHO*/
+    height: auto;
+}
+
+.logo-icon{
+    color: var(--second-color);
+    font-size: 700px;/*TAMANHO*/
+}
+
+.box:hover{/*EFEITO DA IMAGEM*/
+    transform: translateY(-5px) /**/ scale(1.1) /*AUMENTO DA IMAGEM*/; /*TIPO DE EFEITO*/
+}
+
+body.color{
+    --text-color: #FFFFFF;
+    --bg-color: #08162A;
+    --second-color: #2B3544;
+}

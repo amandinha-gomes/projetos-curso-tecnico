@@ -1,0 +1,23 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#F5F5F5"/>
+<g id="Group 50">
+<g id="Group 47">
+<g id="Group 27">
+<g id="Group 19">
+<g id="Group 18">
+<rect id="Rectangle 50" x="-987" y="-221" width="1440" height="1024" fill="#D9D9D9"/>
+<rect id="Rectangle 51" x="-987" y="-221" width="1440" height="1024" fill="url(#paint0_linear_0_1)"/>
+<rect id="Rectangle 5" x="-626" y="-23" width="708" height="73" rx="8" fill="white"/>
+<path id="Vector" d="M17.1527 15.0943H16.0686L15.6844 14.7238C17.0292 13.1595 17.8388 11.1286 17.8388 8.91938C17.8388 3.99314 13.8456 0 8.91938 0C3.99314 0 0 3.99314 0 8.91938C0 13.8456 3.99314 17.8388 8.91938 17.8388C11.1286 17.8388 13.1595 17.0292 14.7238 15.6844L15.0943 16.0686V17.1527L21.9554 24L24 21.9554L17.1527 15.0943ZM8.91938 15.0943C5.50257 15.0943 2.74443 12.3362 2.74443 8.91938C2.74443 5.50257 5.50257 2.74443 8.91938 2.74443C12.3362 2.74443 15.0943 5.50257 15.0943 8.91938C15.0943 12.3362 12.3362 15.0943 8.91938 15.0943Z" fill="#999999"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1" x1="-267" y1="-221" x2="-267" y2="803" gradientUnits="userSpaceOnUse">
+<stop offset="0.440653" stop-color="#FC7900" stop-opacity="0.85"/>
+<stop offset="1" stop-color="#FC7900" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

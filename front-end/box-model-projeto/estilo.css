@@ -1,0 +1,50 @@
+
+/*RESET CSS*/
+h1{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ img{
+     width: 300px;
+ }
+ 
+ 
+ /*REGRAS CSS DO BOX MODEL*/
+ .card{
+     padding: 10px;
+     background-color: #dedede	;
+     width: max-content;
+     border: 10px solid #b8b8b8	;
+     display: inline-block;
+     margin-right: 10px;
+ }
+ 
+ 
+ 
+ .text{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 16px;
+     text-align: left;
+     line-height: 1.5 ;
+     width: 300px;
+ } 
+
+ .title{
+     font-weight: bold;
+     padding: 5px;
+     font-size: 30px;
+ }
+ 
+ /* ESTRUTURA DE CENTRALIZAÇÃO*/
+ .container{
+     margin: 0 auto;
+     width: max-content;
+     padding: 20px;
+    background-color:#778899; 
+}
+
+body{
+    background-color: #999;
+}
+

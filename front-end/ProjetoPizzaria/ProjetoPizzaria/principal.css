@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url('img/Group\ 48.png');
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 100px;
+    height: 140px;
+    display: flex;
+}
+
+.logo p{
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.retangulo {
+    width: 553px;
+    height: 500px;
+    background-color: rgb(239, 239, 239, 0.12);
+    align-items: center;
+    margin-left: 450px;
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+.retangulo p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    padding-top: 20px;
+    font-family: Poppins;
+}
+
+.retangulo h1 {
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.botao {
+    border-radius: 8px;
+    background: #FFF;
+    width: 295px;
+    height: 54px;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.botao button{
+    background-color: #FFF;
+    text-align: center;
+    align-items: center;
+    border: #F27706;
+    border-radius: 5px;
+    padding-left: 110px;
+    margin-top: 20px;
+}
+
+@media (max-width: 400px){
+
+    body{
+        width: 270px;
+        height: 617px;
+    }
+    
+    .retangulo{
+        margin-left: 15px;
+        width: 350px;
+        height: 500px;
+        margin-top: 20px;
+    }
+
+    .retangulo h1{
+        padding-top: 110px;
+        font-size: 30px;
+    }
+
+    .retangulo p{
+        font-size: 22px;
+    }
+
+    .logo{
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo p{
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .botao{
+        margin-left: 80px;
+        margin-bottom: 20px;
+        width: 190px;
+    }
+
+    .botao button{
+        width: 100px;
+        padding-left: 60px;
+    }
+}

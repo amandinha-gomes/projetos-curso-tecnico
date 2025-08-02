@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url('img/Rectangle\ 66.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+h2{ 
+    float: left;
+    margin-left: 40px;
+    margin-top: 30px;
+    color: white;
+    font-size: 37px;
+}
+
+.img{
+    margin-left: 630px;
+    margin-top: 20px;
+    margin-right: 90px;
+    height: 180px;
+    width: 100px;
+}
+
+h4{
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 100px;
+}
+
+p{
+    color: #918c8c;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 100px;
+}
+
+/* INICIO TELEFONE */
+.telefone{
+    border-radius: 8px;
+    border: 1px solid rgba(242, 119, 6, 0.35);
+    background: #FFF;
+    width: 747px;
+    height: 112px;
+    margin-left: 340px;
+    margin-top: 10px;
+}
+
+.telefone h1{
+    color: #999;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+.telefone p{
+    margin-right: 400px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+    margin-right: 473px;
+}
+
+.imgcell img{
+    width: 50px;
+    height: 50px;
+    color: #EB3223;
+    margin-left: -75px;
+    margin-top: 30px;
+    z-index: 2;
+    position: relative;
+}
+/* FIM TELEFONE */
+
+/* INICIO EMAIL */
+.email{
+    border-radius: 8px;
+    border: 1px solid rgba(242, 119, 6, 0.35);
+    background: #FFF;
+    width: 747px;
+    height: 112px;
+    margin-left: 340px;
+    margin-top: 10px;
+}
+
+.email h1{
+    margin-top: 30px;
+    color: #999;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+.email p{
+    margin-right: 437px;
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 50px;
+    color: #000;
+    margin-right: 424px;
+}
+
+.email img{
+    width: 60px;
+    height: 80px;
+    color: #EB3223;
+    margin-left: 25px;
+    margin-top: 7px;
+    z-index: 2;
+    position: relative;
+}
+/* FIM EMAIL */
+
+/* INICIO ENDEREÇO */
+.adress{
+    border-radius: 8px;
+    border: 1px solid rgba(242, 119, 6, 0.35);
+    background: #FFF;
+    width: 747px;
+    height: 112px;
+    margin-left: 340px;
+    margin-top: 10px;
+}
+
+.adress h1{
+    margin-top: 30px;
+    color: #999;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 130px;
+}
+
+.adress p{
+    margin-right: 490px;
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 50px;
+    color: #000;
+    width: 650px;
+    margin-left: -170px;
+}
+
+.adress img{
+    width: 70px;
+    height: 70px;
+    color: #EB3223;
+    margin-left: 15px;
+    margin-top: 7px;
+    z-index: 2;
+    position: relative;
+}
+/* FIM ENDEREÇO */
+
+.sair{
+    border-radius: 8px;
+    background: #F93030;
+    width: 538px;
+    height: 79px;
+    margin-left: 440px;
+    margin-top: 30px;
+}
+
+.ball{
+    width: 97px;
+    height: 91px;
+    background: #F4E2D1;
+    z-index: 2;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    top: 10px;
+    border-radius: 50px;
+}
+
+.ball img{
+    margin-top: 17px;
+    margin-left: 15px;
+}
+
+.ball2{
+    width: 97px;
+    height: 91px;
+    background: #F4E2D1;
+    z-index: 2;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    top: 10px;
+    border-radius: 50px;
+}
+
+.ball3{
+    width: 97px;
+    height: 91px;
+    background: #F4E2D1;
+    z-index: 2;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    top: 10px;
+    border-radius: 50px;
+}
+
+.sair img{
+    color: #FFF;
+    width: 60px;
+    height: 60px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.sair p{
+    font-size: 17px;
+    color: #FFF;
+    width: 650px;
+    margin-bottom: 30px;
+    margin-top: -40px;
+    margin-left: -170px;
+}
+
+
+
+@media (max-width: 400px){
+    
+    body{
+        /* background-color: rebeccapurple; */
+        /* width: 375px; */
+    }
+
+    /* h2{
+        margin-left: 150px;
+    } */
+
+    h4{
+        margin-left: 400px;
+        width: 200px;
+    }
+
+    .itapevi p{
+        /* margin-left: 10rem; */
+        width: 200px;
+    }
+
+    .img img{
+        margin-top: 20px;
+        margin-right: 100px;
+        height: 180px;
+        width: 100px;
+    }
+
+    .telefone{
+        margin-top: 150px;
+        margin-left: 50px;
+        height: 200px;
+    }
+
+    .telefone h1{
+        font-size: 40px;
+    }
+
+    .telefone p{
+        font-size: 40px;
+        width: 600px;
+    }
+
+    .email{
+        margin-left: 50px;
+        height: 200px;
+    }
+
+    .email p{
+        font-size: 40px;
+        width: 600px;
+        padding-left: 120px;
+    }
+
+    .email h1{
+        font-size: 40px;
+    }
+
+    .adress{
+        margin-left: 50px;
+        height: 200px;
+    }
+
+    .adress p{
+        font-size: 35px;
+        width: 850px;
+    }
+
+    .adress h1{
+        font-size: 40px;
+    }
+
+    .sair{
+        margin-left: 50px;
+        height: 150px;
+        width: 740px;
+    }
+
+    .sair p{
+        padding-left: 350px;
+        font-size: 40px;
+        /* width: 400px; */
+    }
+
+    .sair img{
+        padding-left: 30px;
+    }
+}

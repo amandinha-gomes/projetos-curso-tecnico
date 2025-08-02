@@ -1,0 +1,41 @@
+[
+    {
+        "nome": "Calabresa com queijo",
+        "preco": 16
+    },
+
+    {
+        "nome": "Peperoni com queijo",
+        "preco": 19
+    },
+
+    {
+        "nome": "Peperoni com queijo e tomate",
+        "preco": 16
+    },
+
+    {
+        "nome": "Pizza Portuguesa",
+        "preco": 16
+    },
+
+    {
+        "nome": "Brotinho com queijo e tomate",
+        "preco": 16
+    },
+
+    {
+        "nome": "Pizza de frango",
+        "preco": 16
+    },
+
+    {
+        "nome": "Pizza de mussarela",
+        "preco": 16
+    },
+
+    {
+        "nome": "Pizza Portuguesa",
+        "preco": 16
+    }
+]

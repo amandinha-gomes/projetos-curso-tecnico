@@ -1,0 +1,494 @@
+* {
+    margin: 0 10px;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Poppins', sans-serif;
+   /* background-color: #f5ebdc;*/
+}
+
+header {
+    /*background-image: url(https://pbs.twimg.com/media/Eg2VQRZWAAEaZlF.jpg);*/
+    background-image: url('https://www.mundoconectado.com.br/wp-content/plugins/seox-image-magick/imagick_convert.php?width=910&height=568&format=webp&quality=91&imagick=uploads.mundoconectado.com.br/2021/12/28112126/lanches-bk-imagem-divulgacao-burger-king.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    padding: 30px 0;
+    background-position: right;
+    z-index: 3;
+    background-size: 70%;
+    background-color: #ff8730 ;
+}
+
+.chamada img{
+    float: right;
+    width: 300px;
+    height: 350px;
+}
+
+/*.inicio {
+    text-align: left;
+    float: left;
+    margin-left: 0;
+}*/
+
+/*.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}*/
+
+.barbie{
+    margin-top: 250px;
+    margin-left: 200px;
+}
+
+.logo{
+    position: relative;
+    background-image: url('https://logosmarcas.net/wp-content/uploads/2020/10/Burger-King-Logo.png');
+    z-index: 2;
+    background-size: 100% 100%;
+    width: 130px;
+    height: 70px;
+    float: left;
+    margin-left: 100px;
+}
+
+.menu-desktop{
+    float: right;
+}
+
+.menu-desktop{
+    list-style: none;
+}
+
+.menu-desktop li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav.menu-desktop a{
+    color: #502314;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.menu-mobile{
+    float: right;
+    display: none;
+}
+
+.menu-mobile ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 70px  0 30px 0;
+    display: none;
+    text-align: center;
+    background-color: rgb(205, 0, 167);
+}
+
+.menu-mobile i{
+    position: relative;
+    z-index: 2;
+}
+
+.menu-mobile a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 21px;
+}
+
+.menu-mobile li{
+    padding: 10px 0;
+}
+
+.chamada{
+    padding: 150px 0;
+    /*align-items: left;*/
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.chamada h2{
+    color: #000000;
+    font-size: 40px;
+}
+
+.chamada P{
+    color: #000000;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.lanche{
+    display: flex;
+    font-weight: 400;
+    float: left;
+    align-items: center;
+}
+
+/*.chamada form{
+    margin-top: 15px;
+}
+
+.chamada input[type="email"]:focus{outline: 0}
+
+.chamada input[type="email"]{
+    width: 300px;
+    height: 41px;
+    border-radius: 100px;
+    background-color: #fff;
+    border: 0;
+    padding-left: 10px;
+}
+
+.chamada input[type="submit"]{
+    width: 180px;
+    height: 41px;
+    border-radius: 100px;
+    background-color: rgb(3, 157, 3);
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+}*/
+
+.descricao{
+    text-align: center;
+    padding: 50px;
+    position: absolute;
+    margin-top: 200px;
+}
+
+.inicio{
+    margin-left: 5px;
+}
+
+.barbie p{
+    margin-bottom: 200px;
+    margin-top: 100px;
+}
+
+.barbie{
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+
+.descricao p{
+    font-size: 20px;
+    font-style: italic;
+    min-width: 650px;
+    /*margin-top: 2px;*/
+    margin-bottom: 400px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+
+.descricao b{
+    color: rgb(205, 0, 167);
+    font-size: 27px;
+}
+
+.texto-descricao{
+    padding: 20px 15px;
+    float: center;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.texto1 {
+    float: left;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.texto2 {
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    /*margin-left: 200px;*/
+}
+
+/*.texto-descricao h3{
+    color: #13473e;
+    /*font-size: 20px;*/
+    /*line-height: 30px;*/
+    /* margin-top: 25px; */
+   /* margin-left: 200px;
+    text-align: right;
+    align-items: center;
+    position: absolute;
+    float: left;
+}*/
+
+.texto-descricao p{
+    margin-top: 10px;
+    /*font-size: 20px;*/
+    float: right;
+    text-align: center;
+}
+
+.descricao2 img{
+    width: 40%;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.descricao3{
+    padding: 10px 0 /*70px*/ 0;
+}
+
+.descricao3 .container{
+    background-image: url('../img/lanche.jpeg');
+    /*background-size: cover;*/
+   /*position: relative;*/
+    height: 650px;
+    margin-top: 200px;
+    top: 4px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* .bonde{
+    margin-left: 5px;
+    width: 1500px;
+    height: 1000px;
+} */
+
+/*.depoimento{ 
+    position: absolute;
+    background-color: #fff;
+    left: 60%;
+    bottom: 0px;
+    max-width: 507px;
+    padding: 40px;
+    box-shadow: 0 8px 20px 0 rgba(51, 45, 45, 0.8);
+}
+
+.depoimento b{
+    font-size: 19px;
+    color: rgb(3, 157, 3);
+}*/
+
+.titulo-servico{
+    text-align: center;
+}
+
+.Servicos{
+    margin-top: 50px;
+}
+
+.combo-produtos{
+    display: inline-block;
+    flex-wrap: wrap;
+    gap: 23px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.espaco-produtos{
+    display: flex;
+    width: 30%;
+    padding: 35px;
+}
+
+.espaco-produtos p{
+    margin: 9px 0;
+}
+
+.espaco-produtos a{
+    display: inline-block;
+    border: 1px solid gray;
+    color: #13473e;
+    font-size: 19px;
+    text-decoration: none;
+    padding: 6px 13px;
+    border-radius: 20px;
+}
+
+.box-produtos{
+    border-radius: 3px;
+    height: 100%;
+    box-shadow: 0 8px 20px 0 rgba(51, 45, 45, 0.8);
+    padding: 10px;
+}
+
+.box-produtos img{
+    height: 200px;
+    width: 290px;
+}
+
+.cheddar img{
+    width: 200px;
+    margin-left: 40px;
+}
+
+.cheeseburguer img{
+    height: 210px;
+    width: 200px;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.king img{
+    width: 300px;
+    height: 200px;
+}
+
+.whopper img{
+    height: 210px;
+    width: 180px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.formulario{
+    padding: 30px 0;
+}
+
+.formulario h2{
+    text-align: center;
+}
+
+.formulario form{
+    margin-top: 10px;
+}
+
+.formulario input[type=text]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.formulario .botao{
+    width: 20%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #502314;
+}
+
+footer{
+    margin: 50px 0;
+    border-top: 1px solid #502314;
+}
+
+.box-footer{
+    margin: 20px 0;
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.box-footer p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.box-footer input[type="text"]{
+    width: 80%;
+    padding-left: 10px;
+    max-width: 190px;
+    height: 45px;
+    border-radius: 100px;
+    border: 1px solid gray;
+}
+
+.box-footer button{
+    margin-left: 10px;
+    max-width: 60px;
+    height: 45px;
+    border: 1px solid #502314;
+    border-radius: 50px;
+    background-color: #fff;
+    width: 70px;
+}
+    
+/*ABAIXO CODIGO DE RESPONSIVIDADE*/
+
+/*MEDIDA PARA DESKTOP E TABLET*/
+
+@media screen and (max-width: 1024px) {
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+    }   
+
+    .chamada{
+        text-align: center;
+    }
+
+    .chamada input[type="email"]{
+        margin-bottom: 10px;
+    }
+
+    .depoimento{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        padding: 30px;
+        width: 90%;
+        transform: translate(-50%, -50%);
+    }
+
+    .espaco-produtos{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .box-footer{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/*MEDIDA PARA CELULAR*/
+
+@media screen and (max-width: 768px) {
+
+    .texto-descricao{
+        width: 100%;
+        display: block;
+        float: none;
+    }
+
+    .descricao2 img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        margin-top: 10px;
+        max-width: 500px;
+    }
+}

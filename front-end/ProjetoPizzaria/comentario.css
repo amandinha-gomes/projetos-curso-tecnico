@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* background-image: url('img\pizza4 1.svg'); */
+    background-size: cover;
+    height: auto;
+}
+
+.container img{
+    width: 100%;
+}
+
+.retangulo{
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 650px;
+    border-radius: 32px;
+    position: relative;
+    bottom: 30px;
+
+    text-align: center;
+}
+
+.retangulo h3{
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.retangulo p{
+    color: #999;
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 28px; /* 85.714% */
+}
+
+span{
+    color: #23CB98;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.star img{
+    margin-top: 5px;
+    width: 57px;
+    height: 58px;
+}
+
+.star{
+    margin-left: 550px;
+    display: flex;
+    gap: 30px;
+} 
+
+.square{
+    margin-top: 30px;
+    display: flex;
+    width: 40px;
+    height: 45px;
+    margin-left: 150px;
+}
+
+.square p{
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.comment{
+    border-radius: 8px;
+    background: #F5F5F5;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 560px;
+    height: 228px;
+}
+
+.comment2{
+    border-radius: 8px;
+    background: #F5F5F5;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 560px;
+    height: 228px;
+}
+
+.oi{
+    display: flex;
+    margin-left: 230px;
+}
+
+.coment1{
+    display: flex;
+}
+
+.coment1 img{
+    width: 76px;
+    height: 74px;
+    border-radius: 76px;
+    margin-left: 17px;
+    margin-top: 20px;
+    float: left;
+}
+
+.coment1 p{
+    width: 100px;
+    height: 11px;
+    color: #AEA6A6;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.star3{
+    display: flex;
+    float: right;
+    bottom: 80px;
+    position: relative;
+    margin-right: 50px;
+}
+
+.star3 img{
+    width: 40px;
+    height: 40px;
+}
+
+.text p{
+    color: #AEA6A6;
+    display: inline-block;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.hmm p{
+    float: left;
+    padding-left: 30px;
+    font-weight: 700;
+}
+
+.coment2 {
+    display: flex;
+}
+
+.coment2 img{
+    width: 76px;
+    height: 74px;
+    border-radius: 76px;
+    margin-left: 17px;
+    margin-top: 20px;
+    float: left;
+}
+
+.coment2 p{
+    width: 100px;
+    height: 11px;
+    color: #AEA6A6;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.star2 {
+    display: flex;
+    float: right;
+    bottom: 80px;
+    position: relative;
+    margin-right: 50px;
+}
+
+.star2 img{
+    width: 40px;
+    height: 40px;
+}
+
+.text2 p{
+    color: #AEA6A6;
+    display: inline-block;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.hmm2 p{
+    float: left;
+    padding-left: 30px;
+    font-weight: 700;
+}
+
+@media (max-width: 400px){
+
+    .retangulo h3{
+        font-size: 20px;
+    }
+
+    .retangulo p{
+        font-size: 16px;
+        margin: 0px;
+        margin-top: -10px;
+        padding: 8px;
+    }
+
+    .retangulo span{
+        font-size: 18px;
+    }
+
+    .square img{
+        width: 30px;
+        height: 24px;
+    }
+
+    .square{
+        margin-top: 2px;
+        margin-left: 20px;
+    }
+
+    .square p{
+        margin-top: -15px;
+    }
+
+    .oi{
+        margin-left: 0px;
+        display: inline-block;
+    }
+
+    .star{
+        margin-left: 120px;
+        gap: 7px;
+    }
+
+    .star img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .comment{
+        height: 150px;
+        width: 350px;
+        margin-left: 10px;
+    }
+
+    .comment img{
+        margin-top: 7px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .coment1{
+        margin-top: -27px;
+        margin-left: 10px;
+    }
+
+    .coment1 p{
+        font-size: 13px;
+    }
+
+    .text p{
+        margin-top: -40px;
+        font-size: 13.5px;
+        line-height: 20px;
+    }
+
+    .hmm p{
+        padding-bottom: -20px;
+        margin-top: 0px;
+    }
+
+    .hmm2 p{
+        padding-bottom: -20px;
+        margin-top: -10px;
+    } 
+    
+    .text2 p{
+        margin-top: -70px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .star3 img{
+        margin-top: 30px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .comment2{
+        height: 150px;
+        width: 350px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .comment2 img{
+        margin-top: 7px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .comment2 p{
+        font-size: 13px;
+    }
+
+    .star2{
+        margin-left: 120px;
+        gap: 7px;
+    }
+
+    .star2 img{
+        margin-top: 30px;
+        margin-right: -10px;
+        width: 30px;
+        height: 30px;
+    }
+   
+}
+
