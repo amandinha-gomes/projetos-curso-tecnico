@@ -1,6 +1,6 @@
-# 🧠 Projetos - Curso Técnico em Inteligência e Análise de Dados (SENAI Santo Amaro)
+# 🧠 Projetos - Curso Técnico em Desenvolvimento de Sistemas
 
-Este repositório reúne os principais projetos desenvolvidos durante o meu curso técnico no SENAI Santo Amaro, organizados por área de conhecimento:
+Este repositório reúne os principais projetos desenvolvidos durante o meu curso técnico no SENAI Suzana Dias, organizados por área de conhecimento:
 
 - Desenvolvimento Front-End
 - Fundamentos de Programação Orientada a Objetos (FPOO)
@@ -32,7 +32,6 @@ Projetos desenvolvidos com foco em lógica de programação, boas práticas e co
 - **Jogo da Velha**: Jogo interativo em linha de comando com estrutura modular.
 
 ---
-
 
 ## 🗃️ Banco de Dados
 
