@@ -1,0 +1,17 @@
+
+projetoDiarista/bin/br/com/projeto/App.class
+projetoDiarista/bin/br/com/classes/Pessoa.class
+projetoDiarista/bin/br/com/classes/Diarista.class
+projetoDiarista/bin/br/com/classes/Cliente.class
+projetoDiarista/.settings/org.eclipse.jdt.core.prefs
+projetoDiarista/.settings/org.eclipse.core.resources.prefs
+projetoDiarista/.project
+projetoDiarista/.classpath
+loja/src/module-info.java
+loja/bin/module-info.class
+loja/bin/br/com/main/main.class
+loja/bin/br/com/classes/veiculo.class
+loja/.settings/org.eclipse.jdt.core.prefs
+loja/.settings/org.eclipse.core.resources.prefs
+loja/.project
+loja/.classpath
