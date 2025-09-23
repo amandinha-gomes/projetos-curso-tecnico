@@ -49,14 +49,13 @@ const CadastroProdutoContent = () => {
                 <label htmlFor="nome">Nome do Produto:</label>
                 <input type="text" id="nome" placeholder="Nome" className="produto" />
 
-                <label htmlFor="codigo">Código:</label>
-                <input type="text" id="codigo" placeholder="Ex: 00345" className="codigo" />
+                <label htmlFor="codigo">Nome Fornecedor:</label>
+                <input type="text" id="codigo" placeholder="Ex: Fornecedor ABC" className="codigo" />
 
-                <label htmlFor="preco">Preço Unitário (R$):</label>
-                <input type="text" id="preco" placeholder="Ex: $0,50" className="preco-prod" />
+                <label htmlFor="cnpj">CNPJ Fornecedor:</label>
+                <input type="text" id="cnpj" placeholder="Ex: 0000" className="codigo" />
 
-                <label htmlFor="usuario">Usuário Responsável:</label>
-                <input type="text" id="usuario" placeholder="00000" className="usuario" />
+                
 
                 {materiais.map((item, index) => (
                     <div className="row" key={index}>

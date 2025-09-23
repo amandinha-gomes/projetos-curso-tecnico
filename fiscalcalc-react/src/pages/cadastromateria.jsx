@@ -1,42 +1,95 @@
 import React, { useState } from "react";
 import materia from "../img/materia.svg";
+import api from "../services/api"
 
 const CadastroMateriaPrima = () => {
     const [file, setFile] = useState(null);
     const [materiaPrima, setMateriaPrima] = useState(""); // estado para matéria-prima
+    const [itensPendentes, setItensPendentes] = useState([]);
+    const [numNfe, setNumNfe] = useState("");
 
+    // Upload XML
     const handleFileChange = (e) => {
         setFile(e.target.files[0]);
     };
 
-    const handleUpload = (e) => {
-        e.preventDefault();
+    const handleUpload = async (e) => {
+    e.preventDefault();
 
-        if (file) {
-            alert(`Arquivo $ {
-                    file.name
-                }
-                enviado com sucesso !`);
+    if (!file) {
+        alert("Selecione um arquivo XML primeiro.");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+        const response = await api.post("/materia/upload", formData, {
+            headers: { "Content-Type": "multipart/form-data" },
+            validateStatus: () => true // <<< importante: trata todos os status como "resolve"
+        });
+
+        console.log("Resposta do backend:", response);
+
+        if (response.status === 200) {
+            alert("Arquivo enviado com sucesso!");
+            setItensPendentes([]);
+            setNumNfe(response.data.num_nfe);
+        } else if (response.status === 422) {
+            // Itens pendentes
+            setItensPendentes(response.data.itens_pendentes || []);
+            setNumNfe(response.data.num_nfe || "");
+            alert(response.data.message);
+        } else {
+            alert("Erro ao enviar XML: " + response.data.detail || "Erro desconhecido");
         }
 
-        else {
-            alert("Selecione um arquivo XML primeiro.");
+    } catch (error) {
+        console.error("Erro Axios:", error);
+        alert("Erro ao enviar XML.");
+    }
+};
+
+    // Finalizar itens pendentes
+    const handleFinalizarPendentes = async () => {
+        if (!numNfe || itensPendentes.length === 0) {
+            alert("Nenhum item pendente para finalizar.");
+            return;
+        }
+
+        const payload = {
+            num_nfe: numNfe,
+            itens: itensPendentes.map((item) => ({
+                nome: item.nome,
+                unidade_medida: item.unidade_medida,
+                quantidade: item.quantidade,
+                qtd_embalagem: item.qtd_embalagem || 1,
+                valor_unitario: item.valor_unitario,
+            })),
+        };
+
+        try {
+            const response = await api.post("/materia/upload/finalizar", payload);
+            alert(response.data.message);
+            setItensPendentes([]);
+            setNumNfe("");
+        } catch (error) {
+            console.error(error);
+            alert(error.response?.data?.detail || "Erro ao finalizar itens pendentes.");
         }
     };
 
+    // Cadastro manual
     const handleSubmit = (e) => {
         e.preventDefault();
         alert("Cadastro manual realizado com sucesso!");
     };
 
-    // placeholder dinâmico dependendo da matéria-prima
+    // Placeholder dinâmico dependendo da matéria-prima
     const getPlaceholder = () => {
-        if (materiaPrima.toLowerCase() === "lata") {
-            return "Quantos litros tem na lata";
-        }
-        if (materiaPrima.toLowerCase() === "rolo") {
-            return "Quantos metros tem";
-        }
+        if (materiaPrima.toLowerCase() === "lata") return "Quantos litros tem na lata";
+        if (materiaPrima.toLowerCase() === "rolo") return "Quantos metros tem";
         return "Ex: x5"; // padrão
     };
 
@@ -62,6 +115,29 @@ const CadastroMateriaPrima = () => {
                     <button type="submit" className="upload-btn-materia" > Fazer Upload </button>
                 </form> */}
             </div>
+
+                {/* Itens Pendentes */}
+                {itensPendentes.length > 0 && (
+                    <div className="itens-pendentes">
+                        <h3>Itens Pendentes</h3>
+                        {itensPendentes.map((item, index) => (
+                            <div key={index}>
+                                <span>{item.nome} ({item.unidade_medida})</span>
+                                <input
+                                    type="number"
+                                    placeholder="Qtd por embalagem"
+                                    value={item.qtd_embalagem || ""}
+                                    onChange={(e) => {
+                                        const updated = [...itensPendentes];
+                                        updated[index].qtd_embalagem = parseFloat(e.target.value);
+                                        setItensPendentes(updated);
+                                    }}
+                                />
+                            </div>
+                        ))}
+                        <button onClick={handleFinalizarPendentes}>Finalizar Itens Pendentes</button>
+                    </div>
+                )}
 
             {/* Cadastro manual */}
             <div className="manual-section-materia" >
